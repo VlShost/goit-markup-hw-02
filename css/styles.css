@@ -12,21 +12,35 @@
     --button-text-accent-color: #FFFFFF;
 }
 
-
+/* general */
 body {
     background-color: var(--primary-backgroung-color);
     color: var(--primary-text-color);
 
+    list-style: none;
+
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* buttons */
 .btn {
-    cursor: pointer;
-
-    
+    cursor: pointer;    
 }
 
 .btn-primary {
@@ -52,6 +66,15 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* lists */
+.list {
+    list-style: none;
+}
+
+/* links */
+.link {
+    text-decoration: none;
+}
 
 /* header */
 .logo {
@@ -135,13 +158,14 @@ body {
 }
 
 .feature-info {
-    font-size: 14px;
+    /* font-size: 14px; */
     line-height: 1.7;
 }
 
 /* crew */
 .crew {
     background-color: var(--secondary-background-color);
+    text-transform: none;
 }
 
 .feature.crew {
