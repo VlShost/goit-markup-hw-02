@@ -54,6 +54,11 @@ body {
     letter-spacing: 0.06em;
 }
 
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #188CE8;
+}
+
 .btn-secondary {
     background-color: var(--secondary-background-color);
     color: var(--title-features-color);
